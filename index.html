@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lamp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <p class="logo" id="p1">Lamp<span>Logo</span></p>
+        <ul class="nav_links">
+          <li><a href="#" id="a1">Latest</a></li>
+          <li><a href="#" id="a2">Modern</a></li>
+          <li><a href="#" id="a3">Contemporary</a></li>
+          <li><a href="#" id="a4">Affordable</a></li>
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="btn">
+          <span></span>
+        </button>
+      </nav>
+
+      <div class="lamp-container">
+        <img src="./images/lamp.png" class="lamp" />
+        <img src="./images/light.png" class="light" id="light" />
+      </div>
+
+      <div class="text-container">
+        <h1 id="h1">Lorem<br />Dolor.</h1>
+        <p id="p2">
+          Lorem, ipsum dolor sit amet consectetur amet consectetur amet es ate
+          adipisicing elit. Numquam, voluptatibus assumenda reprehenderit iure
+          explicabo culpa beatae cumque asd porbero af quibusdam leai mollitia.
+        </p>
+        <a href="#">Check All Collections</a>
+      </div>
+    </header>
+
+    <script>
+      function toggleBtn() {
+        p1.classList.toggle("active");
+        a1.classList.toggle("active");
+        a2.classList.toggle("active");
+        a3.classList.toggle("active");
+        a4.classList.toggle("active");
+        h1.classList.toggle("active");
+        p2.classList.toggle("active");
+        btn.classList.toggle("activeBtn");
+        light.classList.toggle("on");
+        header.classList.toggle("passive");
+      }
+    </script>
+  </body>
+</html>
